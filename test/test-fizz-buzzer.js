@@ -4,7 +4,7 @@ const expect = require('chai').expect;
 const fizzBuzzer = require('../fizzBuzzer');
 
 describe('fizzBuzzer', function(input) {
-  it('', function() {
+  it('input/3 should return fizz, input/5: buzz, input/15: fizz-buzz - other numerical input should return unchanged', function() {
     const normalCases = [
       {num: 1, expected: 1},
       {num: 2, expected: 2},
@@ -33,7 +33,8 @@ describe('fizzBuzzer', function(input) {
       expect(answer).to.equal(input.expected);
     });
   });
-  it('', function() {
+
+  it('should raise error if args not numbers', function() {
     const badInputs = ['15', 'a', '*', 'frog', true, {}, [3, 5]];
     badInputs.forEach(function(input) {
       expect(function() {
