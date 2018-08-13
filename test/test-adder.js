@@ -1,14 +1,10 @@
 'use strict';
-
 // import chai, declare expect variable
 const expect = require('chai').expect;
-
 // import adder
 const adder = require('../adder');
-
 // unit tests for our `adder` function
 describe('adder', function() {
-
   // test the normal case
   it('should add two numbers', function() {
     // range of normal inputs, including
@@ -25,7 +21,6 @@ describe('adder', function() {
       expect(answer).to.equal(input.expected);
     });
   });
-
   it('should raise error if args not numbers', function() {
     // range of bad inputs where not both are numbers
     const badInputs = [
