@@ -3,7 +3,7 @@
 const expect = require('chai').expect;
 const fizzBuzzer = require('../fizzBuzzer');
 
-describe('fizzBuzzer', function(input) {
+describe('fizzBuzzer', function() {
   it('input/3 should return fizz, input/5: buzz, input/15: fizz-buzz - other numerical input should return unchanged', function() {
     const normalCases = [
       {num: 1, expected: 1},
